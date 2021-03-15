@@ -1,0 +1,115 @@
+:root {
+  --letter-spacing: 4px;
+}
+body {
+  background-color: honeydew;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+  height: 100px;
+  padding: 50px 0px 50px 0px;
+} /* header height = 200px */
+.header__title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: var(--letter-spacing);
+}
+.header__description {
+  font-size: 1rem;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+section img {
+  width: 400px;
+  height: 600px;
+}
+
+.tab {
+  width: 600px;
+  height: 600px;
+  margin-left: 25px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* tab height = 600px
+header ~ tab margin = 50px
+*/
+
+.tab__buttons {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.tab__buttons button {
+  width: 150px;
+  padding: 25px;
+  text-align: center;
+}
+.historyBtn {
+  background-color: white;
+  border-radius: 10px 0px 0px 0px;
+}
+.visionBtn {
+  margin-left: -6px;
+  background-color: lightgray;
+}
+.goalsBtn {
+  margin-left: -6px;
+  border-radius: 0px 10px 0px 0px;
+  background-color: lightgray;
+}
+
+.tabContent {
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px 10px;
+  background-color: white;
+}
+.tabContent h4 {
+  font-size: 28px;
+  letter-spacing: var(--letter-spacing);
+}
+.historyTab {
+  display: none;
+}
+.visionTab {
+  display: none;
+}
+.goalsTab {
+  display: none;
+}
+
+.showingTab {
+  display: block;
+}
+.hideTab {
+  display: none;
+}
+
+@media (max-width: 1125px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  section img {
+    margin-bottom: 25px;
+  }
+  .tab {
+    margin-top: 50px;
+    height: 1000px;
+  }
+  body {
+    height: 1400px;
+  }
+}
